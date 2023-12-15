@@ -3,6 +3,7 @@ const controllers = require("./controllers");
 
 const router = Router();
 
-router.get("/read-students", controllers.getStudents);
+router.get("/read", controllers.getStudents);
+router.get("/read/:id", controllers.getStudentByID);
 
 module.exports = router;
